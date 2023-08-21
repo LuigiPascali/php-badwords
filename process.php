@@ -43,15 +43,15 @@
                     $paragraph = $_POST["paragraph"];
                     $wordToCensor = $_POST["word"];
 
-                    echo "<h2 class='mb-3'> Paragrafo inserito:</h2> ";
+                    echo "<h2 class='mb-3'> Testo inserito:</h2> ";
                     echo "<p class='mb-3'> $paragraph </p>";
-                    echo "<p>Lunghezza paragrafo: " . strlen($paragraph) . "</p>";
+                    echo "<p>Lunghezza testo: " . strlen($paragraph) . "</p>";
 
                     $censoredParagraph = str_ireplace($wordToCensor, '***', $paragraph);
 
-                    echo "<h2 class='mt-5 mb-3'> Paragrafo censurato: </h2>";
+                    echo "<h2 class='mt-5 mb-3'> Testo censurato: </h2>";
                     echo "<p class='mb-3'> $censoredParagraph </p>";
-                    echo "<p>Lunghezza paragrafo censurato: " . strlen($censoredParagraph) . "</p>";
+                    echo "<p>Lunghezza testo censurato: " . strlen($censoredParagraph) . "</p>";
                 }
 
             ?>

@@ -43,7 +43,7 @@
 
                         <h2 class="mt-3 mb-4 text-center"> 
                             <i class="fas fa-pencil-alt"></i>
-                            Inserisci il paragrafo e la parola da censurare
+                            Scrivi un testo e una parola da censurare
                         </h2>
 
                         <form action="process.php" method="post">
@@ -52,7 +52,7 @@
 
                                 <label for="paragraph" class="mb-2">
                                     <i class="fas fa-align-left"></i>
-                                    Paragrafo:
+                                    Testo:
                                 </label>
 
                                 <textarea class="form-control" name="paragraph" id="paragraph" cols="4" rows="50"></textarea>
