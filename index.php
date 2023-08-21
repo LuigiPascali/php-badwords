@@ -63,7 +63,7 @@
 
                                 <label for="word" class="mt-2 mb-2">
                                     <i class="fas fa-filter"></i>
-                                    Parola da censurare:
+                                    Parola da censurare: 
                                 </label>
 
                                 <input type="text" class="form-control" name="word" id="word">
