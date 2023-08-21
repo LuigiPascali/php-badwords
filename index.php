@@ -33,6 +33,42 @@
 
         <!-- ! Main Start -->
         <main>
+
+            <div class="container mt-5">
+
+                <h2 class="mb-4">
+                    Inserisci il paragrafo e la parola da censurare
+                </h2>
+
+                <form action="process.php" method="post">
+
+                    <div class="form-group">
+
+                        <label for="paragraph">
+                            Paragrafo:
+                        </label>
+
+                        <textarea class="form-control" name="paragraph" id="paragraph" cols="4" rows="50"></textarea>
+
+                    </div>
+
+                    <div class="form-group mb-2">
+
+                        <label for="word">
+                            Parola da censurare:
+                        </label>
+
+                        <input type="text" class="form-control" name="word" id="word">
+
+                    </div>
+
+                    <button type="submit" class="btn btn-primary mt-2 mb-2">
+                        Invia
+                    </button>
+
+                </form>
+
+            </div>
                                     
         </main>
 
