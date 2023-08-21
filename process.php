@@ -33,6 +33,30 @@
 
         <!-- ! Main Start -->
         <main>
+
+        <div class="container mt-5">
+
+            <?php
+
+                if ($_SERVER["REQUEST_METHOD"] == "POST") {
+
+                    $paragraph = $_POST["paragraph"];
+                    $wordToCensor = $_POST["word"];
+
+                    echo "<h2 class='mb-3'> Paragrafo inserito:</h2> ";
+                    echo "<p class='mb-3'> $paragraph </p>";
+                    echo "<p>Lunghezza paragrafo: " . strlen($paragraph) . "</p>";
+
+                    $censoredParagraph = str_ireplace($wordToCensor, '***', $paragraph);
+
+                    echo "<h2 class='mt-5 mb-3'> Paragrafo censurato: </h2>";
+                    echo "<p class='mb-3'> $censoredParagraph </p>";
+                    echo "<p>Lunghezza paragrafo censurato: " . strlen($censoredParagraph) . "</p>";
+                }
+
+            ?>
+
+        </div>
                                     
         </main>
 
