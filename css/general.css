@@ -1,0 +1,7 @@
+:root {
+    --primary_color: #032B43 ;
+    --secondary_color: #1D3F5E;
+    --tertiary_color: #CCCECA;
+}
+
+body {background-image: linear-gradient(to bottom, var(--primary_color), var(--secondary_color)); color: var(--teriary_color);}

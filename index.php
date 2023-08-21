@@ -24,6 +24,7 @@
         <!-- ! CSS -->
 
         <link rel="stylesheet" href="./css/reset.css">
+        <link rel="stylesheet" href="./css/general.css">
 
         <title> PHP Badwords </title>
         
@@ -36,37 +37,49 @@
 
             <div class="container mt-5">
 
-                <h2 class="mb-4">
-                    Inserisci il paragrafo e la parola da censurare
-                </h2>
+                <div class="row">
 
-                <form action="process.php" method="post">
+                    <div class="col-md-8 offset-md-2 col-lg-6 offset-lg-3">
 
-                    <div class="form-group">
+                        <h2 class="mt-3 mb-4 text-center"> 
+                            <i class="fas fa-pencil-alt"></i>
+                            Inserisci il paragrafo e la parola da censurare
+                        </h2>
 
-                        <label for="paragraph">
-                            Paragrafo:
-                        </label>
+                        <form action="process.php" method="post">
 
-                        <textarea class="form-control" name="paragraph" id="paragraph" cols="4" rows="50"></textarea>
+                            <div class="form-group">
+
+                                <label for="paragraph" class="mb-2">
+                                    <i class="fas fa-align-left"></i>
+                                    Paragrafo:
+                                </label>
+
+                                <textarea class="form-control" name="paragraph" id="paragraph" cols="4" rows="50"></textarea>
+
+                            </div>
+
+                            <div class="form-group mb-2">
+
+                                <label for="word" class="mt-2 mb-2">
+                                    <i class="fas fa-filter"></i>
+                                    Parola da censurare:
+                                </label>
+
+                                <input type="text" class="form-control" name="word" id="word">
+
+                            </div>
+
+                            <button type="submit" class="btn btn-primary mt-2 mb-2">
+                                <i class="fas fa-paper-plane"></i>
+                                Invia
+                            </button>
+
+                        </form>
 
                     </div>
 
-                    <div class="form-group mb-2">
-
-                        <label for="word">
-                            Parola da censurare:
-                        </label>
-
-                        <input type="text" class="form-control" name="word" id="word">
-
-                    </div>
-
-                    <button type="submit" class="btn btn-primary mt-2 mb-2">
-                        Invia
-                    </button>
-
-                </form>
+                </div>
 
             </div>
                                     
